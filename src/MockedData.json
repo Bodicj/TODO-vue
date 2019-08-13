@@ -1,0 +1,43 @@
+{
+  "lists": [
+    {
+      "name": "First list from Local Storage",
+      "id": "7c79e3c5-52ad-47b4-a50d-cddc1e725acb",
+      "tasks": {
+        "results": [
+          {
+            "id": "6d38d799-717c-4447-86e7-364ab45d3f6f",
+            "text": "Go shopping",
+            "completed": true
+          },
+          {
+            "id": "b1d1b8a2-48e6-449f-a6a6-67bd2d154b21",
+            "text": "Start reading books",
+            "completed": false
+          }
+        ],
+        "count": 2
+      }
+    },
+    {
+      "name": "Second list from Local Storage",
+      "id": "39d0a9dd-e52a-49e4-a3b5-2cbc4ec3a5f0",
+      "tasks": {
+        "results": [
+          {
+            "id": "a28c0817-1e66-400e-953b-6f20f40b1da1",
+            "text": "Go fishing",
+            "completed": false
+          },
+          {
+            "id": "d93b1a73-918f-48d7-818b-6105620e15ab",
+            "text": "Start playing video games",
+            "completed": true
+          }
+        ],
+        "count": 2
+      }
+    }
+  ],
+  "count": 2
+}
