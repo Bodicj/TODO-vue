@@ -8,3 +8,7 @@ export function createUUID() {
   });
   return uuid;
 }
+
+export default {
+  createUUID
+}

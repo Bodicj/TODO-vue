@@ -79,7 +79,7 @@ const actions = {
     });
     dispatch('getListItem');
   },
-  addTask: async ({ getters, dispatch }) => {
+  addTask: async ({ getters, dispatch }, taskName) => {
     // I know that this is a really huge callback, but I need to do this in the way that
     // we want to save edited task in the local storage
     await APICall((data) => {
@@ -87,7 +87,7 @@ const actions = {
       if (indexList > -1) {
         const newData = { ...data };
         const taskSample = {
-          text: 'Text sample',
+          text: taskName || 'New task',
           id: createUUID(),
           completed: false,
         };

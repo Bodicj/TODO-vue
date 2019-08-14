@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { APICall } from '@/service';
 import { createUUID } from '@/helpers';
 
@@ -22,13 +23,13 @@ const actions = {
     });
     dispatch('fetchList');
   },
-  addList: async ({ dispatch }) => {
+  addList: async ({ dispatch }, listName) => {
     // I know that this is a really huge callback, but I need to do this in the way that
     // we want to save edited task in the local storage
     await APICall((data) => {
       const newData = { ...data };
       const listSample = {
-        name: 'List item',
+        name: listName || 'New List',
         id: createUUID(),
         tasks: {
           results: [],
@@ -42,7 +43,7 @@ const actions = {
     });
     dispatch('fetchList');
   },
-  changeTask: async ({ dispatch }, { id, text }) => {
+  changeListName: async ({ dispatch }, { id, text }) => {
     // I know that this is a really huge callback, but I need to do this in the way that
     // we want to save edited task in the local storage
     await APICall((data) => {

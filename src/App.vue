@@ -24,7 +24,16 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-
+*:focus, *:active {
+  outline: none;
+}
+h1, h2, h3, h4 p, span {
+  cursor: default;
+}
+#app {
+  width: 100%;
+  overflow-x: hidden;
+}
 .router-view {
   padding: 40px;
 }

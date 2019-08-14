@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import ListDashboard from '@/components/Dashboard/ListDashboard';
-import ListItem from '@/components/ListItem/ListItem';
+
+const ListDashboard = () => import('@/components/Dashboard/ListDashboard');
+const ListItem = () => import('@/components/ListItem/ListItem');
 
 Vue.use(Router);
 
